@@ -226,8 +226,9 @@ body {
     z-index: -1;
 }
 
+/* Portfolio Section */
 .portfolio {
-    padding: 70px 0;
+    padding: 70px 50px;
     background-color: var(--section-background);
     display: flex;
     justify-content: center;
@@ -235,6 +236,8 @@ body {
 
 .portfolio .container {
     position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .portfolio .container .p {
@@ -243,11 +246,77 @@ body {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 50px;
+    margin-top: 20px;
 }
 
 .card {
     background-color: white;
-    padding: 40px;
+    height: 440px;
+}
+
+.card .image {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .text {
+    padding: 20px;
+}
+
+.card .text h1 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.card .text p {
+    line-height: 30px;
+    color: #707070;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+    padding: 70px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .container {
+    position: relative;
+}
+
+.about .container .p {
+    top: 90px;
+}
+
+.about-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-about .image {
+    width: 250px;
+    height: 375px;
+    overflow: hidden;
+}
+
+.left-about .image img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.right-about {
+    width: 640px;
+    height: 460px;
 }
